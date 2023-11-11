@@ -1,0 +1,23 @@
+@import "base.scss";
+
+.button {
+    background-color: $primary;
+    @include font (16px, 500, $white);
+    border: none;
+    border-radius: 8px;
+    height: 46px;
+    cursor: pointer;
+    padding: 0px 20px;
+    &--outline {
+        @extend .button;
+        background-color: $white;
+        color: $gray700;
+        border: 1px solid $gray300;
+        &:hover {
+            background-color: $white;
+        }
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}

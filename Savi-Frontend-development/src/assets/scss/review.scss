@@ -1,0 +1,96 @@
+@import "base.scss";
+
+.testimonial-section {
+  // display: flex;
+  // width: 1440px;
+  // padding: 80px 99.5px;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 30px;
+  // background: var(--grey-100, #F2F4F7);
+  // //border: 2px solid #FF0000;
+
+  .testimony-heading {
+    @include font(40px, 700, $primary);
+    margin-top: 80px;
+  }
+
+  .testimony-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+
+    .testimonies-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 80px;
+
+      .testimony-body {
+        display: flex;
+        width: 351px;
+        height: 170px;
+        padding: 0 19px;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid var(--primary-color, #b5179e);
+        background: var(--white, #fff);
+        position: relative;
+
+        .triangle {
+          position: absolute;
+          bottom: -22px;
+          left: 40%;
+        }
+
+        .testimony-mssg-object {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .testimony-message {
+          @include font(16px, 400, $black);
+          text-align: start;
+        }
+
+        .polygonHolder {
+          width: 18px;
+          height: 23px;
+        }
+      }
+
+      .reviewer-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .reviewer-photo {
+          border-radius: 50px;
+        }
+
+        .reviewer-body {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 20px;
+          gap: 4px;
+
+          .reviewer-name {
+            @include font(16px, 400, $black);
+            //line-height: 140%;
+          }
+
+          .reviewer-title {
+            color: var(--grey-500, #667085);
+            font-size: 16px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 140%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

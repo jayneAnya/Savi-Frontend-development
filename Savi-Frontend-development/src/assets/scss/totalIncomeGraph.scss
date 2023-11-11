@@ -1,0 +1,52 @@
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    //border: 2px solid #000000;
+
+    .title-box {
+        display: flex;
+        align-items: flex-start;
+        width: 140px; /* Adjust the width as needed */
+        
+        .text-box {
+            width:100px;
+            height: 19px;
+    
+            .text-in-textBox {
+                color: #475569;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.08px;
+                
+            }
+        }
+
+    }
+
+    .date-section {
+        display: flex;
+        padding: 2px 4px;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--grey-500, #667085);
+        //border: 2px solid #000000;
+
+        .date-text {
+            color: #475569;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.07px;
+        }
+
+    }
+}
+
+

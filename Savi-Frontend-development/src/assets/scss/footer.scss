@@ -1,0 +1,44 @@
+@import "base.scss";
+
+.footer {
+    background-color: $primary;
+    @include boxSize(100%, 315px);
+    @include font(16px, 400, $white);
+    color: $white;
+    padding: 58px 0;
+    &__container {
+        @include display(column, null, center);
+        @include boxSize(89%, 45px);
+        max-width: 1278px;
+        margin: 0 auto;
+        &--text {
+            margin-bottom: 60px;
+            color: $white;
+        }
+        &--line {
+            @include boxSize(100%, 0px);
+            background-color: $gray100;
+            margin-bottom: 24px;
+            opacity: 0.2;
+            border: 0.1px solid $gray100;
+        }
+        &--social {
+            @include display(row, space-between, center);
+            width: 100%;
+            padding: 0 32px;
+        }
+        &--copyright {
+            color: $white;
+        }
+        &--icons {
+            @include boxSize(104px, 24px);
+            @include display(row, space-between, center);
+        }
+        &--icon {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

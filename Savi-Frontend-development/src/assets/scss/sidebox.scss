@@ -1,0 +1,40 @@
+@import "base.scss";
+
+.sidebox {
+    @include boxSize(271px, 100vh);
+    background-color: $white;
+    &__container {
+        margin: 24px;
+    }
+    &__details {
+        @include display(column, flex-start, flex-start);
+        margin-top: 24px;
+        &--text {
+            @include font(16px, 400, $gray200);
+        }
+        &--others {
+            @extend .sidebox__details--text;
+            margin: 24px 0;
+        }
+    }
+    &__section {
+        @include boxSize(223px, 44px);
+        align-items: center;
+        padding-left: 10px;
+        display: flex;
+        margin-top: 24px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    // &__section:hover {
+    //     background-color: $primary;
+    //     color: $white;
+    //     font-weight: 600;
+    // }
+
+    &__dash {
+        padding-left: 10px;
+        @include font(16px, 400, null);
+    }
+}

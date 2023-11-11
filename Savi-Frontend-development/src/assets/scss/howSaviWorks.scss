@@ -1,0 +1,41 @@
+@import "base.scss";
+
+.howSaviWorks-content {
+    display: flex;
+    width: 362px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .integer-container {
+        @include boxSize(31px, 30px);
+        display: grid;
+        place-items: center;
+        border-radius: 100px;
+        background-color: $primary;
+        margin-right: 20px;
+        .integer-holder {
+            @include font(16px, 400, $black);
+        }
+    }
+
+    .body-container {
+        display: flex;
+        width: 266px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        .body-title {
+            @include font(18px, 600, $black);
+        }
+
+        .description-container {
+            display: flex;
+            flex-direction: column;
+
+            .description-body {
+                @include font(16px, 400, $black);
+                line-height: 140%;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "base.scss";
+
+.why-savi-section {
+    display: flex;
+    padding: 80px 0;
+    flex-direction: column;
+    align-items: center;
+
+    .why-use-savi {
+        @include font(40px, 700, $primary);
+        margin-bottom: 32px;
+    }
+
+    .why-savi-content {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+
+        .whyUseSavi-feature {
+            display: flex;
+            width: 311px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            height: 160px;
+    
+            .saviIcon-div {
+                width: 50px;
+                height: 50px;
+            }
+    
+            .whySavi-title {
+                @include font(20px, 600, $black);
+            }
+    
+            .whySaviDescription-div {
+                display: flex;
+                flex-direction: column;
+                .whySavi-description {
+                    @include font(16px, 400, $black);
+                    line-height: 140%;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    
+}

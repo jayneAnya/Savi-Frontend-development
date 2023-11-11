@@ -1,0 +1,29 @@
+.target_frmae {
+    display: inline-flex;
+    padding: 32px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    border: 2px  solid #000;
+
+    .frame-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        border: 2px  solid #000;
+
+        .header-text {
+            color: var(--main-text, #101828);
+
+            /* Headline Bold - 24 */
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 33.6px */
+        }
+    }
+}

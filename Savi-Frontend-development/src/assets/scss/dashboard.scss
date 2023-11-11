@@ -1,0 +1,76 @@
+@import "base.scss";
+
+.dashboard {
+    @include display(column, null, null);
+    width: 100%;
+    padding: 24px 0 0 40px;
+    &__message {
+        @include boxSize(50px, 50px);
+        position: fixed;
+        bottom: 18px;
+        right: 38px;
+        cursor: pointer;
+    }
+    &__greet {
+        @include font(24px, 700, $black);
+    }
+    &__date {
+        display: flex;
+        margin-top: 4px;
+        &--text {
+            @include font(16px, 400, $gray200);
+            padding-left: 8px;
+        }
+    }
+    &__card {
+        @include display(row, space-between, center);
+        
+        margin: 32px 0;
+        padding: 24px;
+        max-width: 1014px;
+        width: 100%;
+    }
+    &__tracker {
+        display: flex;
+        width: 100%;
+        margin-bottom: 32px;
+        &--left {
+            @include boxSize(600px, 288px);
+            max-width: 654px;
+            background-color: $white;
+            display: flex;
+            padding: 24px;
+        }
+        &--right {
+            margin-left: 24px;
+            width: 396px;
+            background-color: $white;
+            // @include boxSize(40%, 304px);
+        }
+        &--activities {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            color: #101828;
+        }
+    }
+    &__transaction {
+        @extend .dashboard__tracker;
+        &--left {
+            background-color: transparent;
+            display: flex;
+            padding: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 0px;
+            max-width: 659px;
+        }
+        &--right {
+            @extend .dashboard__tracker--right;
+            @include boxSize(380px, null);
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+}

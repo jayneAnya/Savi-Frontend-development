@@ -1,0 +1,19 @@
+@import "base.scss";
+
+.banner {
+    @include boxSize( 100%, 42px);
+    @include display(row, center, center);
+    background-color: $primary;
+    &__text {
+        @include font(16px, 600, $white);
+        &--anchor {
+            font-weight: 400;
+            color: $white;
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "base.scss";
+    .myGoals {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &__alpha {
+            @include font(14px, 400, $black);
+        }
+        &__beta {
+            @include font(14px, 400, $bluevariant);
+        }
+        &__gamma {
+            margin: 16px 0px;
+        }
+        &__delta {
+            @include font(14px, 400, $gray500);
+        }
+        &__alpharex {
+            display: flex;
+            flex-direction: row;
+        }
+        &__betarex {
+            margin-left: 20px;
+        }
+        &__deltarex {
+            @include font(14px, 400, $black);
+        }
+        &__epsilonrex {
+            margin-left: 40px;
+        }
+    }
+    

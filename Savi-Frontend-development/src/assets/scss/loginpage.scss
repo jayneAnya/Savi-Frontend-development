@@ -1,0 +1,130 @@
+@import "base.scss";
+
+.login_container {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+}
+.left-section {
+  flex: 1;
+  background-image: url("../images/EasyGroupImg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlay {
+  padding-left: 54px;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.left-section h1 {
+  color: rgb(209, 203, 203);
+
+  text-align: start;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+  text-align: center;
+  margin-top: 610px;
+  width: 100%;
+  opacity: none;
+}
+.heading {
+  font-size: 32px;
+  font-size: 600;
+  margin-bottom: 30px;
+}
+.subheading {
+  font-size: 16px;
+  font-weight: 500;
+  width: 476px;
+  color: #d9d9d9;
+}
+.right-section {
+  background-color: $white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginform {
+  margin-top: 4%;
+  width: 400px;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome {
+  margin: 32px 0;
+  justify-content: center;
+}
+.text-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-2 p {
+  @include font(16px, 600, $black);
+}
+
+.email {
+  margin-top: 34px;
+  @include font(16px, 600, $black);
+}
+.password {
+  @include font(16px, 600, $black);
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input,
+.password-input {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background-color: white;
+  width: 100%;
+  height: 46px;
+  border: 1px solid #d5cccc;
+  border-radius: 8px;
+  color: #000;
+  padding-left: 1rem;
+}
+.account {
+  font-size: 16px;
+  font-weight: 400;
+  color: #98a2b3;
+  margin-top: 16px;
+}
+.link {
+  font-size: 16px;
+  color: #b5179e;
+  font-weight: 600;
+}
+.forgot {
+  @include font(16px, 400, $blue);
+  margin-top: 16px;
+}
+.btn {
+  margin-top: 14px;
+}
+.privacy {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 212px;
+  margin-bottom: 80px;
+  @include font(18px, 500, $black);
+}

@@ -1,0 +1,23 @@
+@import "base.scss";
+
+.cardDash {
+    width: 189px;
+    background-color: $white;
+    display: flex;
+    @include display(column, flex-start, flex-start);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+    border: 1px solid $gray400;
+    &__note {
+        margin: 16px 0px;
+    }
+    &__text {
+        @include font(14px, 400, $black);
+        text-align: start;
+    }
+    &__amount {
+        @include font(24px, 600, $black);
+        text-align: start;
+    }
+}

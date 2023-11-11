@@ -1,0 +1,17 @@
+@import "base.scss";
+
+.header-nav {
+    @include boxSize( null, 72px);
+    display: flex;
+    @include display( row, space-between, center);
+    background-color: $white;
+    padding: 0 126px 0 51px;
+    &__avatar {
+        display: flex;
+        align-items: center;
+        &--text {
+            @include font( 16px, 400, $black);
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@import "base.scss";
+
+.container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+}
+.firstSection {
+    width: 50vw;
+    background-image: url("../svg/SaviImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    padding: 50px;
+}
+.firstSection h2 {
+    color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.innerFirstSection {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+}
+.innerFirstSection h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.innerFirstSection p {
+    text-align: center;
+    width: 468px;
+    margin-top: 15px;
+    color: white;
+}
+.secondSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: $white;
+}
+.innercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding: 50px 0 50px 0;
+}
+.innerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.img-savi {
+    margin-bottom: 28px;
+}
+.text-savi {
+    @include font(16px, 600, $black);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.box-colour {
+    background-color: $primary;
+    @include boxSize(320px, 46px);
+    @include font(16px, 500, $white);
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.box-text {
+    text-align: center;
+    margin-top: 16px;
+    @include font(16px, 400, $gray200);
+}
+.sign-link {
+    @include font(16px, 600, $primary);
+}
+#spacetag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #d0d5dd;
+    margin-top: 16px;
+}
